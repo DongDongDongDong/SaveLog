@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="d7b-Z1-Byk">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OG6-dZ-9cm">
+                                <rect key="frame" x="200" y="100" width="200" height="70"/>
+                                <color key="backgroundColor" red="1" green="0.70192988349999996" blue="0.23132184510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="ZUd-zT-NFN"/>
+                                    <constraint firstAttribute="width" constant="200" id="yxx-g4-AJi"/>
+                                </constraints>
+                                <state key="normal" title="添加日志"/>
+                                <connections>
+                                    <action selector="add1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Jb-aP-hWf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pT3-S9-F28">
+                                <rect key="frame" x="200" y="219" width="200" height="70"/>
+                                <color key="backgroundColor" red="1" green="0.70192988349999996" blue="0.23132184510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="添加日志"/>
+                                <connections>
+                                    <action selector="add2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OgG-74-pcq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OcZ-lX-RM4">
+                                <rect key="frame" x="200" y="339" width="200" height="70"/>
+                                <color key="backgroundColor" red="1" green="0.70192988349999996" blue="0.23132184510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="添加日志"/>
+                                <connections>
+                                    <action selector="add3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rO2-am-DQN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEn-PT-OkE">
+                                <rect key="frame" x="200" y="459" width="200" height="70"/>
+                                <color key="backgroundColor" red="1" green="0.70192988349999996" blue="0.23132184510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="添加日志"/>
+                                <connections>
+                                    <action selector="add4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="peo-4W-URT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14117647707462311" green="0.58431375026702881" blue="0.94117653369903564" alpha="0.75" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="OG6-dZ-9cm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="100" id="2jy-Lm-gyP"/>
+                            <constraint firstItem="OcZ-lX-RM4" firstAttribute="height" secondItem="pT3-S9-F28" secondAttribute="height" id="53i-YI-Ypg"/>
+                            <constraint firstItem="pT3-S9-F28" firstAttribute="width" secondItem="OG6-dZ-9cm" secondAttribute="width" id="9hf-bw-o8G"/>
+                            <constraint firstItem="OG6-dZ-9cm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kj7-lK-JFF"/>
+                            <constraint firstItem="pT3-S9-F28" firstAttribute="top" secondItem="OG6-dZ-9cm" secondAttribute="bottom" constant="49" id="agH-v7-ieb"/>
+                            <constraint firstItem="OcZ-lX-RM4" firstAttribute="width" secondItem="pT3-S9-F28" secondAttribute="width" id="bRm-sn-SeH"/>
+                            <constraint firstItem="pT3-S9-F28" firstAttribute="leading" secondItem="OG6-dZ-9cm" secondAttribute="leading" id="jWC-QO-Ahg"/>
+                            <constraint firstItem="OG6-dZ-9cm" firstAttribute="leading" secondItem="pT3-S9-F28" secondAttribute="trailing" id="kcr-dp-Uv5"/>
+                            <constraint firstItem="dEn-PT-OkE" firstAttribute="leading" secondItem="OcZ-lX-RM4" secondAttribute="leading" id="lVC-0I-H1J"/>
+                            <constraint firstItem="OcZ-lX-RM4" firstAttribute="top" secondItem="pT3-S9-F28" secondAttribute="bottom" constant="50" id="mCc-EC-DvD"/>
+                            <constraint firstItem="dEn-PT-OkE" firstAttribute="top" secondItem="OcZ-lX-RM4" secondAttribute="bottom" constant="50" id="mRZ-Zi-Gyp"/>
+                            <constraint firstItem="pT3-S9-F28" firstAttribute="height" secondItem="OG6-dZ-9cm" secondAttribute="height" id="pMy-2Q-fD0"/>
+                            <constraint firstItem="dEn-PT-OkE" firstAttribute="height" secondItem="OcZ-lX-RM4" secondAttribute="height" id="sQU-cg-PnL"/>
+                            <constraint firstItem="OcZ-lX-RM4" firstAttribute="leading" secondItem="pT3-S9-F28" secondAttribute="leading" id="thR-lZ-P7X"/>
+                            <constraint firstItem="dEn-PT-OkE" firstAttribute="width" secondItem="OcZ-lX-RM4" secondAttribute="width" id="xGU-kZ-pBq"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="kcr-dp-Uv5"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="QlO-Xg-Eoy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1041" y="337"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="r41-oL-bC7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d7b-Z1-Byk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ofb-E9-xrT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Gxj-0g-clj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3gD-LG-dOE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="229" y="337"/>
+        </scene>
+    </scenes>
+</document>
