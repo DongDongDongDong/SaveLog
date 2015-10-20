@@ -43,7 +43,21 @@
             NSLog(@"Write Log %@ Failed",txtName);
         }
     }
+}
+
+
++ (void)removeLog:(NSString *)txtName{
     
+    NSString *documentsDirectory = [[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] stringByAppendingPathComponent:@"ChakeLog"];
+    NSFileManager *fileMgr = [NSFileManager defaultManager];
+    
+    NSString *MapLayerDataPath = [documentsDirectory stringByAppendingPathComponent:txtName];
+    
+    BOOL bRet = [fileMgr fileExistsAtPath:MapLayerDataPath];
+    if (bRet) {
+        NSError *err;
+        [fileMgr removeItemAtPath:MapLayerDataPath error:&err];
+    }
 }
 
 
